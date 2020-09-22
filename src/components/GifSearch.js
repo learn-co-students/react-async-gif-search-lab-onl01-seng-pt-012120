@@ -6,6 +6,11 @@ class GifSearch extends React.Component {
         searchTerm: ""
     }
 
+    handleSubmit = e => {
+        e.preventDefault()
+        this.props.fetchGIFs(this.state.query)
+    }
+
     changeHandler = (e) => {
         this.setState({ searchTerm: e.target.value })
     }
