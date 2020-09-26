@@ -7,10 +7,13 @@ import NavBar from './NavBar'
 const App = () => {
   return (
     <div>
-      < NavBar color='black' title="Giphy Search" />
+      <NavBar color='black' title="Giphy Search" />
       <GifListContainer />
     </div>
   )
 }
 
 export default App
+
+
+// https://api.giphy.com/v1/gifs/search?q=rupaul&api_key=MMhDvaKZV3fT2zVrB9AMqN5rNJPKsEbN&rating=g
