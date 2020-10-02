@@ -17,11 +17,14 @@ class GifSearch extends React.Component {
     }
     render() {
         return (
-
-            <form onSubmit={this.submitHandler}>
-                <input type="text" placeholder="search" value={this.state.searchTerm} onChange={this.changeHandler} />
-                <input type="submit" value="search" />
-            </form>
+            <div>
+                <br />
+                <form class="form-inline active-cyan-3 active-cyan-4" onSubmit={this.submitHandler}>
+                    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search" value={this.state.searchTerm} onChange={this.changeHandler} />
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <br />
+            </div>
         )
     }
 }
