@@ -17,8 +17,9 @@ class GifListContainer extends Component {
     //     console.log("Good job your search worked!")
     // }
 
-    fetchGifs = (term = "dolphins") => {
-        fetch(`https://api.giphy.com/v1/gifs/search?q=${term}&api_key=dc6zaTOxFJmzC&rating=g&limit=10`)
+     fetchGifs = (term = "dolphins") => {
+    //     fetch(`https://api.giphy.com/v1/gifs/search?q=${term}&api_key=dc6zaTOxFJmzC&rating=g&limit=10`)
+    fetch(`https://api.giphy.com/v1/gifs/search?q=${term}&api_key=dc6zaTOxFJmzC&rating=g`)
             .then(resp => resp.json())
             .then(data => this.setState({ gifs: data.data }))
     }
